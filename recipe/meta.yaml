@@ -48,7 +48,6 @@ test:
     - pytest
     - pytest-xdist
     - mock  # [py27]
-  run_test.sh
 
 about:
   home: http://instaseis.net

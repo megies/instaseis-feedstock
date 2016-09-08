@@ -37,11 +37,6 @@ requirements:
 test:
   imports:
     - instaseis
-  commands:
-    # Travis' OSX tests require more open files.
-    # Put it in quotes to workaround an issue with an internal conda-forge tool.
-    - "if [[ $TRAVIS == true ]]; then ulimit -n 2048 ; fi"  # [osx]
-    - python -m instaseis.tests
   requires:
     # Not having the next two will results in substantially fewer test to be
     # run. The travis OSX builder takes a long time otherwise and I'm

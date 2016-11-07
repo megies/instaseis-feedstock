@@ -1,5 +1,5 @@
-{% set version = "1.0.1" %}
-{% set sha256 = "21227148bd4f8617fda6484192a50da61e15904c2faa2b251699afa4f1b74f83" %}
+{% set version = "1.1.0" %}
+{% set sha256 = "1173fea608d67b21fc2daebc4631995a10dc9192c63eb2248c0e2ff0a86c4f80" %}
 
 package:
   name: instaseis

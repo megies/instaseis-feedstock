@@ -7,8 +7,6 @@ os: osx
 osx_image: beta-xcode6.1
 
 env:
-  # This appears to not be set on OSX for some reason.
-  - TRAVIS=true
   matrix:
 
     - CONDA_PY=27
@@ -18,6 +16,8 @@ env:
   global:
     # The BINSTAR_TOKEN secure variable. This is defined canonically in conda-forge.yml.
     - secure: "CuYMiiTWATaqMFYVUYlWF94gerbRzdwYpNod9nV9ZnOOsj1bch/rnhODTfoW7mc82Nbmtt/Wv0os8rHr3XV7PLVCzn718q/VxdkXO3cn5WWbhKfNoSehWKnpgpYVrTVnTc9W8webD1FaXfpRCEUoI2zSprI8VQ7Qeo1FnvmciG24ds2IRMWus7JEjgOK73VayBiPF8AgiddntY5Kl57QeSTBtptBBUH0fk57DfvrlAmat6tWXc9up82jBrAzkFbEgQwxnI8GzO9c/DfYg+TFCMT2cyDvvf6Vfr6fu+Lm5i4uqeh997CbxrscDEX9LH8bnTWUbqIA6D5wjmVWcQJTCeEJ5c0yZSuRL4POAb4iDgNG7QwkhCK1OqL0drk9J9hjt9KJIMNfpkn5hNN2dk0+Rfgfh3RijcU6rOeSP1vKmvEn3uDloqI0XU9l6Cb9xO0CzFrqDDmjl4IjUhY9fnRhUlqoMO94dyOah752EPQQw/iBQw36eDP21bHH8atXgLI0v6/9cTQhBQ7pRwvjo0Yw6rOsLamo1TIA9Jy6C+v2g8QoJQR8tNJae3aRp7nQpCBeYwNgQHX7mYgLNsLXGCXlJKof4AsPxx2IVepmF5BtcxA6csDab4ozSb5EdyXqrHcNCydfRpIB8o4haD22yJMnOMZPh2kONLHF4xyFOWP7dlE="
+    # This appears to not be set on OSX for some reason.
+    - TRAVIS=true
 
 
 before_install:

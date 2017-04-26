@@ -7,8 +7,10 @@ os: osx
 osx_image: beta-xcode6.1
 
 env:
+  # This appears to not be set on OSX for some reason.
+  - TRAVIS=true
   matrix:
-    
+
     - CONDA_PY=27
     - CONDA_PY=34
     - CONDA_PY=35

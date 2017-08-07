@@ -1,6 +1,6 @@
 {% set name = "instaseis" %}
-{% set version = "1.1.1" %}
-{% set sha256 = "2d39870f27c7db905133389e8344cfba229adb2fa47479fda7281724b288f016" %}
+{% set version = "1.2.0" %}
+{% set sha256 = "7220f5d2918d27954c4721d1ba6fbb3bfc36bb0763b4a4e37447cc59f1b8a14a" %}
 
 package:
   name: {{ name|lower }}
@@ -33,6 +33,7 @@ requirements:
     - jsonschema
     - pyqt
     - pyqtgraph
+    - geographiclib
 
 test:
   imports:

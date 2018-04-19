@@ -1,6 +1,6 @@
 {% set name = "instaseis" %}
-{% set version = "1.2.0" %}
-{% set sha256 = "418ad0af7f8cd2624d49c4309777a7a4fd3e1e501abe07cae489a83b70db62e0" %}
+{% set version = "1.3.0" %}
+{% set sha256 = "97b30d80d51b6841d41f9266d95a44bf697a8b2dbe56b2b8e39eacd895f9b383" %}
 
 package:
   name: {{ name|lower }}
@@ -34,6 +34,7 @@ requirements:
     - pyqt
     - pyqtgraph
     - geographiclib
+    - futures  # [py27]
 
 test:
   imports:
@@ -49,6 +50,7 @@ test:
     - pytest
     - pytest-xdist
     - mock  # [py27]
+    - futures  # [py27]
 
 about:
   home: http://instaseis.net

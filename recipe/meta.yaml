@@ -12,18 +12,19 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
   skip: True  # [win]
 
 requirements:
   build:
+    - {{ compiler('fortran') }}
+    - {{ compiler('c') }}
+  host:
     - python
     - setuptools
-    - gcc
   run:
     - python
-    - libgfortran
     - numpy
     - h5py
     - obspy

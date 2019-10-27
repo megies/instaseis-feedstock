@@ -29,7 +29,7 @@ requirements:
     - h5py
     - obspy
     - future
-    - tornado
+    - tornado >=5,<6
     - requests
     - jsonschema
     - pyqt
